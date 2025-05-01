@@ -255,23 +255,23 @@ TAREA -> AGREGAR LOS COMENTARIOS EN LOS COMANDOS, PARA SABER QUE PASA CON CADA U
 ```sh
 cd tecnicatura
 
-cd class-git
+cd class-git #Nos metemos hasta la carpeta class-git
 
-ls
+ls # Listamos todos los archivos y carpetas
 
-touch historia.txt
+touch historia.txt #Crea un archivo vacío
 
-code .
+code . #Abre el editor de codigo
 
 #Modificamos el archivo historia.txt colocando lo siguiente: Bienvenido     mi nombre es Ariel (coloca tu nombre)
 
-ctrl + s
+ctrl + s #Guardamos los cambios
 
-git status
+git status #Vemos el estado actual
 
-git add .
+git add . #Agrega el archivo modificado
 
-git status
+git status #Vemos el estado actual
 
 git commit #Sin agregar -m veremos que pasa
 
@@ -286,13 +286,9 @@ Esc + shift + z + z #Salimos del mensaje para el commit, en linux, esto anda en 
 
 #Agregamos otra línea de mensaje en historia.txt desde VSC: estoy estudiando programación
 
-ctrl + s
+ctrl + s #Guard #Agrega el archivo modificado
 
-git add .
-
-git commit
-
-#Se abre un editor de código basado en línea de comandos, editor de texto como VSC llamado vim
+git commit #Se abre un editor de código basado en línea de comandos, editor de texto como VSC llamado vim
 
 Esc + i #Para comenzar a escribir mensaje del commit, no suele ser necesario
 
@@ -306,7 +302,7 @@ git log historia.txt #Vemos todos los commit
 
 q #Para salir del registro de commits
 
-#Copiamos un hash mas antoguo y otro reciente, ingresamos el siguiente comando
+#Copiamos un hash mas antiguo y otro reciente, ingresamos el siguiente comando
 
 git diff hash_commit_numerico hash_commit_numerico #Comparamos diferentes commits y sus cambios, poner la versión mas vieja primero, luego la mas nueva
 
@@ -316,7 +312,6 @@ cd ..
 
 cd ..
 ```
-
 
 La tarea de hoy, agregar esta clase al README.md con el lenguaje de markdown, como lo hicimos en la clase pasada, luego deben hacer el commit correspondiente al cambio agregado.
 
