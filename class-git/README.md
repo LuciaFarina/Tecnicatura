@@ -1,82 +1,96 @@
-# CLASE 1
+# Git
+
+## CLASE 1
 
 Abrimos la terminal de Git Bash en Window o la terminal de Ubuntu, tambien la terminal de Mac, y comenzamos con los siguientes comandos y creación de directorios
 
 ```sh
-pwd  
+pwd
 ```
+
 > Vemos la ruta de la carpeta en la que estamos
 
 ```sh
-cd 
+cd
 ```
+
 > Es para navegar a una carpeta: change directory -> cambiar de directorio
 
 ```sh
-cd / 
+cd /
 ```
->Nos lleva al home, en la raíz del disco
+
+> Nos lleva al home, en la raíz del disco
 
 ```sh
-cd ~ 
+cd ~
 ```
+
 > La virgulilla significa que estamos en el lugar de los documentos o del usuario
 
 ```sh
-ls 
+ls
 ```
->Esto es listar los archivos, nos muestra todos los archivos en la raíz
+
+> Esto es listar los archivos, nos muestra todos los archivos en la raíz
 
 ```sh
 ls -al
-``` 
->El espacio -al significa que es un argumento especial para ver archivos ocultos
+```
 
->Usar la flecha hacía arriba nos muestra el último comando utilizado
+> El espacio -al significa que es un argumento especial para ver archivos ocultos
+
+> Usar la flecha hacía arriba nos muestra el último comando utilizado
 
 ```sh
-ls -l 
+ls -l
 ```
+
 > Muestra casi todos los archivos sin los que están ocultos
 
 ```sh
-ls -a 
+ls -a
 ```
->Muestra el grupo de archivos pero no en una lista
+
+> Muestra el grupo de archivos pero no en una lista
 
 ```sh
-clear 
+clear
 ```
->Limpia la consola o ctrl + l
+
+> Limpia la consola o ctrl + l
 
 ```sh
-cd .. 
+cd ..
 ```
->Nos devuelve a la carpeta anterior
+
+> Nos devuelve a la carpeta anterior
 
 ```sh
-cd U + tab 
+cd U + tab
 ```
->Esto se usa para un autocompletado o para buscar una referencia
+
+> Esto se usa para un autocompletado o para buscar una referencia
 
 ```sh
-cd /D 
+cd /D
 ```
->Cambiamos de disco en window
+
+> Cambiamos de disco en window
 
 ```sh
-df -h 
+df -h
 ```
->Muestra todos los directorios en Ubuntu
+
+> Muestra todos los directorios en Ubuntu
 
 ```sh
 cd /mnt/d
 ```
->Cambia de directorio usando WSL Ubuntu en window
 
+> Cambia de directorio usando WSL Ubuntu en window
 
-## AHORA COMENZAMOS CON LA CREACIÓN DE CARPETAS
-
+### AHORA COMENZAMOS CON LA CREACIÓN DE CARPETAS
 
 ```sh
 cd ..
@@ -85,14 +99,16 @@ cd ..
 
 cd /mnt/c
 
-cd ~ 
+cd ~
 ```
->Vamos a la raíz
+
+> Vamos a la raíz
 
 ```sh
-mkdir Tecnicatura 
+mkdir Tecnicatura
 ```
->Recordar que en window las mayúsculas no tienen relevancia, pero si en Linux
+
+> Recordar que en window las mayúsculas no tienen relevancia, pero si en Linux
 
 ```sh
 cd tecnicatura
@@ -104,11 +120,12 @@ mkdir Java
 mkdir JavaScript
 ```
 
->Revisar y ejecutar cada comando, hacerlo como practica
+> Revisar y ejecutar cada comando, hacerlo como practica
 
-# CLASE 2 MIÉRCOLES
+## CLASE 2 MIÉRCOLES
 
 Abrir git bash en Window o la terminal de Linux o de Mac: al abrir Git Bash hacerlo como administrador
+
 ```sh
 touch vacio.txt #Crea un archivo con su extención: ESCRIBIR DENTRO
 
@@ -129,7 +146,7 @@ rm vacio.txt #Borra el archivo seleccionado, ¡¡¡¡CUIDADO!!!!
 rm --help #Muestra como funciona el comando
 ```
 
-## CREAR UN REPOSITORIO DE GIT Y HAZ TU PRIMER COMMIT
+### CREAR UN REPOSITORIO DE GIT Y HAZ TU PRIMER COMMIT
 
 ```sh
 cd tecnicatura
@@ -180,9 +197,10 @@ git commit -m "Mi segundo commit"
 
 git log historia.txt #Vemos toda la historia de este archivo, el número largo es el hash del commit
 ```
->Revisar y ejecutar cada comando, hacerlo como practica
 
-# CLASE 3
+> Revisar y ejecutar cada comando, hacerlo como practica
+
+## CLASE 3
 
 Analizar cambios en los archivos de tu proyecto Git parte 3
 
@@ -216,14 +234,16 @@ cd class-git #Entramos para crear el README.md para este sector.
 touch README.md #Vamos a crear un archivo nuevo, md significa markdown y se pueden trabajar con editores de texto, este es un lenguaje que transforma el texto a html.
 ```
 
->Enlace a la documentación en GitHub de [MARKDOWN](https://docs.github.com/es/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+> Enlace a la documentación en GitHub de [MARKDOWN](https://docs.github.com/es/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
->Leemos la documentación para ir creando en README.md como lo enseña GitHub.
+> Leemos la documentación para ir creando en README.md como lo enseña GitHub.
 
 ```sh
 code . #Abrimos VSC para editar el archivo.
 ```
->Empezamos a cargar lo visto en las clases anteriores (Comandos) en el README y pasamos a commitear
+
+> Empezamos a cargar lo visto en las clases anteriores (Comandos) en el README y pasamos a commitear
+
 ```sh
 git status
 
@@ -241,10 +261,11 @@ cd ..
 
 cd ..
 ```
->Revisar y ejecutar cada comando, hacerlo como practica
 
-# 
-CLASE 4 
+> Revisar y ejecutar cada comando, hacerlo como practica
+
+## CLASE 4
+
 Analizar cambios en los archivos de tu proyecto Git parte 4
 
 Ingresamos de la siguiente manera:
@@ -252,6 +273,7 @@ Ingresamos de la siguiente manera:
 Abrir git bash en Window o la terminal de Linux o de Mac: al abrir Git Bash hacerlo como administrador, en terminal también o usar sudo para permisos especiales.
 
 TAREA -> AGREGAR LOS COMENTARIOS EN LOS COMANDOS, PARA SABER QUE PASA CON CADA UNO.
+
 ```sh
 cd tecnicatura
 
@@ -278,7 +300,7 @@ git commit #Sin agregar -m veremos que pasa
 
 #Agregar mensaje y salir con
 
-Esc #Presionamos Escape 
+Esc #Presionamos Escape
 
 :wq! + enter #Y ya salimos si estamos en git bash con window
 
@@ -315,4 +337,35 @@ cd ..
 
 La tarea de hoy, agregar esta clase al README.md con el lenguaje de markdown, como lo hicimos en la clase pasada, luego deben hacer el commit correspondiente al cambio agregado.
 
->Revisar y ejecutar cada comando, hacerlo como practica
+> Revisar y ejecutar cada comando, hacerlo como practica
+
+## CLASE 5
+
+¿Qué es el staging?
+
+Tienes una carpeta donde están los archivos de tu proyecto o un directorio y allí tenemos el archivo historia.txt, cuando entramos por consola a ese archivo y creamos el git init, se crea un área en memoria ram que se llama staging, y el otro es el repositorio esta es la carpeta .git donde estarán todos los cambios al final del proyecto.
+
+Entonces tenemos el área de trabajo, cuando colocamos git add historia.txt pasamos al staging o área de preparación, que hay que recordar que esto es en la memoria ram y luego con git commit -m "Mensaje" pasa al repositorio en la rama master, allí se genera un nombre llenos de letras y números, es el hash, el nombre del commit.
+
+¿Qué es Gitflow? Gitflow es un modelo alternativo de creación de ramas en Git en el que se utilizan ramas de función y varias ramas principales. Fue Vincent Driessen en nvie quien lo publicó por primera vez y quien lo popularizó.
+
+¿Qué es branch (rama) y cómo funciona un merge en git?
+
+Tenemos una rama llamada master y es donde están los cambios de nuestros archivos, con cada commit creamos una nueva versión
+
+Vamos a crear una rama experimental para otras versiones que suele llamarse development, al encontrar bug, se crea otra rama que suele llamarse hotfix para hacer reparaciones, siempre que ya tengamos resultados favorables, es donde decidimos hacer un merge, es unir los resultados de las ramas a la rama master.
+
+La principal característica de las ramas principales es que solo existe una de cada tipo. El objetivo es que no se instancien y que no reciban código de forma directa a través de commit, siempre tienen que recibir código a través de ramas de tipo Feature, Release y Hotfix, siempre a través de ramas auxiliares.
+
+Es un riesgo recibir código directamente en la rama Master, porque puede generar defectos en el repositorio en las subidas a producción, que no contemplemos o que no preveamos, por lo que siempre es mejor integrar código en otras ramas antes de integrar con las ramas Master y Develop.
+
+Esta es una metodología estricta pero que da lugar a diferentes interpretaciones o diferentes formas de llevarla en cada equipo, por lo que en algunos casos, algún experto puede permitirse no seguir esa norma, pero son casos muy específicos y siempre de personas de confianza.
+
+En las ramas auxiliares tenemos la rama Feature, la rama Release y la Rama Hotfix, que puede instanciarse todas las veces que se consideren necesarias:
+
+La rama Feature, para nuevas características, nuevos requisitos o nuevas historias de usuario.
+La rama Release, para estandarizar o cortar una serie de código que ha estado desarrollándose en la rama Develop, se saca una rama de este tipo, se mergea y ahí se depura.
+La rama Hotfix, que habitualmente se utiliza para código para depurar el código que venga de producción, por haberse detectado un defecto crítico en producción que deba resolverse, al que se le va a hacer una Release puntual para corregirlo.
+Estas ramas tienen un principio y un fin, ya que son ramas que se mergean con las ramas Master y Develop y desaparecen.
+
+Podemos tener tantas ramas como queramos, tantos repositorios como queramos, lo más importante es saber cuando hacemos un merge, porque es posible que hayan archivos que rompan otros archivos, a esto se lo llama conflicto o bug.
