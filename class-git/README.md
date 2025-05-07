@@ -347,6 +347,8 @@ Tienes una carpeta donde están los archivos de tu proyecto o un directorio y al
 
 Entonces tenemos el área de trabajo, cuando colocamos git add historia.txt pasamos al staging o área de preparación, que hay que recordar que esto es en la memoria ram y luego con git commit -m "Mensaje" pasa al repositorio en la rama master, allí se genera un nombre llenos de letras y números, es el hash, el nombre del commit.
 
+![branch master](image.png)
+
 ¿Qué es Gitflow? Gitflow es un modelo alternativo de creación de ramas en Git en el que se utilizan ramas de función y varias ramas principales. Fue Vincent Driessen en nvie quien lo publicó por primera vez y quien lo popularizó.
 
 ¿Qué es branch (rama) y cómo funciona un merge en git?
