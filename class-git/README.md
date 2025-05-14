@@ -371,3 +371,302 @@ La rama Hotfix, que habitualmente se utiliza para código para depurar el códig
 Estas ramas tienen un principio y un fin, ya que son ramas que se mergean con las ramas Master y Develop y desaparecen.
 
 Podemos tener tantas ramas como queramos, tantos repositorios como queramos, lo más importante es saber cuando hacemos un merge, porque es posible que hayan archivos que rompan otros archivos, a esto se lo llama conflicto o bug.
+
+## CLASE 6
+
+Volver en el tiempo en nuestro repositorio utilizando reset y checkout parte 6
+
+Ingresamos de la siguiente manera:
+
+Abrir git bash en Window o la terminal de Linux o de Mac: al abrir Git Bash hacerlo como administrador, en terminal también o usar sudo para permisos especiales.
+
+TAREA -> AGREGAR LOS COMENTARIOS EN LOS COMANDOS, PARA SABER QUE PASA CON CADA UNO.
+
+```sh
+cd tecnicatura
+```
+
+> Entra en la carpeta `tecnicatura`.
+
+```sh
+cd class-git
+```
+
+> Entra en la carpeta `class-git`.
+
+```sh
+ls
+```
+
+> Lista los archivos y carpetas dentro del directorio actual.
+
+```sh
+touch historia.txt
+```
+
+> Crea un archivo vacío llamado `historia.txt`.
+
+```sh
+cd ..
+```
+
+> Vuelve a `tecnicatura`.
+
+```sh
+code .
+```
+
+> Abre Visual Studio Code en la carpeta actual para editar archivos.
+
+```sh
+git commit -a
+```
+
+> Realiza un commit de todos los archivos ya versionados que hayan sido modificados; se abre Vim para escribir el mensaje.
+
+```sh
+esc + i
+```
+
+> Presiona `Esc` y luego `i` para entrar en modo de inserción en Vim.
+
+```sh
+esc
+```
+
+> Sal del modo de inserción para poder escribir comandos en Vim.
+
+```sh
+:wq!
+```
+
+> Guarda el archivo y sale de Vim.
+
+```sh
+git log
+```
+
+> Muestra el historial de commits completos realizados.
+
+```sh
+git show
+```
+
+> Muestra los detalles del último commit (contenido, autor, fecha, etc.).
+
+```sh
+git log --oneline
+```
+
+> Muestra el historial de commits de forma resumida (una línea por commit).
+
+```sh
+git reset <hash-del-commit>
+```
+
+> Vuelve el repositorio al estado de un commit anterior. Puede ser un **reset suave** o **duro**.
+
+```sh
+git status
+```
+
+> Muestra el estado actual del repositorio (archivos modificados, en staging, etc.).
+
+```sh
+git add .
+```
+
+> Agrega todos los archivos modificados al staging area.
+
+```sh
+git commit -m "Agregamos datos de estudios en historia.txt"
+```
+
+> Realiza un commit con un mensaje personalizado.
+
+```sh
+git config --list
+```
+
+> Muestra la configuración actual de Git (nombre de usuario, correo, etc.).
+
+```sh
+git reset --hard <hash>
+```
+
+> **Reseteo duro**: descarta todo y vuelve exactamente al estado de ese commit (borra cambios locales).
+
+> Crear, modificar y commitear de nuevo el archivo `historia.txt`.
+
+```sh
+git reset --soft <hash>
+```
+
+> **Reseteo suave**: mueve el puntero del commit pero deja los cambios en staging.
+
+```sh
+git diff
+```
+
+> Muestra las diferencias entre los archivos modificados y los últimos commits.
+
+```sh
+git add .
+```
+
+> Agrega los cambios al staging.
+
+```sh
+git status
+```
+
+> Muestra que ya está todo en staging. Git solo guarda archivos, no carpetas vacías.
+
+```sh
+git commit -m "Commiteamos lo último de hoy"
+```
+
+> Realiza el commit con un mensaje.
+
+```sh
+git log
+```
+
+> Revisa los commits recientes.
+
+> Realizar cambios en `historia.txt`.
+
+`ctrl + s`
+
+> Guarda los cambios en el editor (por ejemplo, en VS Code).
+
+```sh
+git diff
+```
+
+> Muestra los cambios realizados antes de agregar al staging.
+
+```sh
+git commit -am "cambio en la última línea del historia.txt"
+```
+
+> Agrega y commitea directamente los archivos modificados (ya versionados).
+
+```sh
+git log
+```
+
+> Muestra el historial de commits.
+
+```sh
+q
+```
+
+> Salir de la vista del log o del show (cuando estás en modo vista).
+
+```sh
+git log --stat
+```
+
+> Muestra un resumen de los archivos modificados en cada commit y el número de líneas cambiadas.
+
+```sh
+q
+```
+
+> Salir del log con estadísticas.
+
+```sh
+git checkout <hash>
+```
+
+> Revisa cómo era el archivo en ese commit (estado anterior).
+
+```sh
+git status
+```
+
+> Revisa el estado del repositorio.
+
+```sh
+git checkout master
+```
+
+> Vuelve a la rama principal `master`.
+
+```sh
+git checkout <hash>
+```
+
+> Vuelve a un commit anterior y modifica desde allí.
+
+```sh
+git commit -am "Reemplazo de una versión por otra de la historia"
+```
+
+> Commit con cambios desde una versión anterior.
+
+```sh
+git log
+```
+
+> Vemos el nuevo commit generado.
+
+> Se recomienda crear ramas para probar cambios sin afectar la rama principal.
+
+```sh
+git branch cambios
+```
+
+> Crea una nueva rama llamada `cambios`.
+
+```sh
+git checkout master
+```
+
+> Cambia de nuevo a la rama principal `master`.
+
+> Las ramas primarias no se deben modificar directamente. Se sugiere usar nombres como `second`, `develop`, `release`, `hotfix`, etc.
+
+```sh
+git branch second
+```
+
+> Crea una rama secundaria `second`.
+
+```sh
+git branch tuNombre
+```
+
+> Crea una rama con tu nombre.
+
+```sh
+git branch hotfix
+```
+
+> Crea una rama para aplicar un arreglo rápido.
+
+```sh
+git branch
+```
+
+> Lista todas las ramas disponibles.
+
+```sh
+git branch -d cambios
+```
+
+> Elimina la rama `cambios` (solo si ya fue fusionada).
+
+```sh
+git branch -D cambios
+```
+
+> Fuerza la eliminación de la rama `cambios`.
+
+```sh
+cd ..
+cd ..
+```
+
+> Sube dos niveles en el sistema de carpetas, saliendo de los directorios.
