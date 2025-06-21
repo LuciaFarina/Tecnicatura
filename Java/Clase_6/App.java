@@ -42,5 +42,7 @@ public class App {
         System.out.println("ID: " + id);
         System.out.println("Precio: " + precio);
         System.out.println("Envio Gratuito?: " + envioGratis);
+
+        sc.close();
     }
 }
