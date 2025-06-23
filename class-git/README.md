@@ -1352,3 +1352,26 @@ Esto quiere decir que también se utiliza la app de GitHub donde al iniciar sesi
 Esto para agregar a través de un QR una app que genere cada 1 segundo nuevos códigos numéricos para la autenticación, yo recomiendo la aplicación: Twilio Authy Authenticator
 
 Es recomendable iniciar sesión, osea registrarnos y guardar estos datos para que al cambiar un dispositivo sigamos teniendo acceso.
+
+## Python - pip
+
+### ¿Qué es el pip y porque lo actualizamos?
+
+```sh
+pip
+```
+
+Es el sistema de gestión de paquetes oficial de Python. Su nombre viene de "Pip Installs Packages" y se utiliza principalmente para
+
+1. Instalar paquetes desde PyPI (Python Package Index).
+2. Desinstalar paquetes.
+3. Actualizarlos.
+4. Listar los que tenés instalados.
+5. Administrar dependencias de proyectos en archivos como requirements.txt.
+
+Se actualiza por varias razones:
+
+1. Seguridad: para corregir vulnerabilidades que pueden ser explotadas al instalar paquetes de terceros.
+2. Compatibilidad: versiones nuevas de Python pueden requerir nuevas versiones de pip para funcionar correctamente.
+3. Nuevas funciones: con cada actualización se añaden mejoras, comandos nuevos, mejor manejo de errores, etc.
+4. Rendimiento: cada versión puede ser más rápida o eficiente.
