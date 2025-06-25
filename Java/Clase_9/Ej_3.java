@@ -1,8 +1,8 @@
-package Clase_9_3;
+package Clase_9;
 
 import java.util.Scanner;
 
-public class App {
+public class Ej_3 {
     public static void main(String[] args) {
         final double SALARIO_BASE = 1000.0;
 

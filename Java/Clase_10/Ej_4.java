@@ -1,8 +1,8 @@
-package Clase_10_4;
+package Clase_10;
 
 import java.util.Scanner;
 
-public class App {
+public class Ej_4 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
