@@ -17,7 +17,6 @@ rl.question("Ingrese su edad: ", (input) => {
       console.log("Muy joven para votar");
     }
 
-    // También con operador ternario
     const resultado = edad >= 18 ? "Puede votar" : "Muy joven para votar";
     console.log("Resultado con operador ternario:", resultado);
   }

@@ -5,8 +5,8 @@
 
 print('((3 + 5 x 8 ) < 3 and ((- 6/3 x 4 ) + 2 < 2)) or ( a > b)')
 print('Ingrese los siguientes números')
-a = int(input('a:'));
-b = int(input('b:'));
+a = int(input('a:'))
+b = int(input('b:'))
 
 ejercicio1 = (3+5*8) < 3 #false
 ejercicio2 = ((- 6/3 * 4 ) + 2 ) < 2 #true
